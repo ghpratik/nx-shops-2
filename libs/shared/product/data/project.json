@@ -1,0 +1,13 @@
+{
+  "name": "shared-product-data",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/product/data/src",
+  "projectType": "library",
+  "tags": ["type:data", "scope:shared"],
+  "generators": {},
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

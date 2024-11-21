@@ -1,0 +1,25 @@
+{
+  "name": "shared-product-state",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/shared/product/state/src",
+  "prefix": "nx-shops",
+  "tags": ["scope:shared", "type:state"],
+  "generators": {
+    "@nx/angular:component": {
+      "styleext": "scss"
+    }
+  },
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/shared/product/state/jest.config.ts"
+      },
+      "outputs": ["{workspaceRoot}/coverage/libs/shared/product/state"]
+    }
+  }
+}
