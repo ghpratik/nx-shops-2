@@ -68,7 +68,10 @@
   },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "sharedGlobals": ["{workspaceRoot}/babel.config.json"],
+    "sharedGlobals": [
+      "{workspaceRoot}/babel.config.json",
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -80,5 +83,6 @@
   },
   "parallel": 1,
   "useInferencePlugins": false,
-  "defaultBase": "origin/main"
+  "defaultBase": "origin/main",
+  "nxCloudAccessToken": "YzBlMmRlZjQtYzg4Ny00YjliLTlhOTUtNTM2YjI0NmRlODIxfHJlYWQtd3JpdGU="
 }
